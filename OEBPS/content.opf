@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" 
+         version="3.0" 
+         xml:lang="en" 
+         unique-identifier="pub-id">
+
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title id="title">Epubs</dc:title>
+    <meta refines="#title" property="title-type">main</meta>
+
+    <dc:creator id="creator">Pardeep Kaur</dc:creator>
+    <meta refines="#creator" property="file-as">Pardeep Kaur</meta>
+    <meta refines="#creator" property="role" scheme="marc:relators">designer</meta>
+
+
+    
+    <dc:identifier id="pub-id">urn:uuid:12C1DF3E-DF35-4FCF-918B-643FF15A7870</dc:identifier>
+    <meta refines="#pub-id" property="identifier-type" scheme="xsd:string">15</meta>
+    
+    <dc:language>en</dc:language>
+    
+    <meta property="dcterms:modified">2020-03-10T12:00:00Z</meta>
+
+    
+    <meta refines="#contrib1" property="role" scheme="marc:relators">mrk</meta>
+
+    <dc:date>2020</dc:date>
+
+    <dc:publisher>London ; Belfast ; New York : Marcus Ward &amp; Co.</dc:publisher>
+    <dc:contributor>University of California Libraries</dc:contributor>
+
+    <meta content="cover-image" name="cover"/>
+
+    <dc:subject>Poetry of places</dc:subject>
+    <dc:subject>France -- Description and travel Juvenile literature</dc:subject>
+
+
+  </metadata>
+  <manifest>
+    <item href="page1.css" id="css1" media-type="text/css"/>
+    <item href="small-screen.css" id="css2" media-type="text/css"/>
+    <item href="style.css" id="css3" media-type="text/css"/>
+    <item href="border1.jpg" id="image1" media-type="text/jpeg"/>
+    <item href="border2.jpg" id="image2" media-type="text/jpeg"/>
+     <item href="border3.jpg" id="image3" media-type="text/jpeg"/>
+      <item href="wisdom.jpg" id="image4" media-type="text/jpeg"/>
+       <item href="twinkle.jpg" id="image5" media-type="text/jpeg"/>
+    <item href="page1.xhtml" id="page1" media-type="application/xhtml+xml"/>
+    <item href="page2.xhtml" id="page2" media-type="application/xhtml+xml"/>
+    <item href="index.html" id="page3" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="page1" />
+    <itemref idref="page2" />
+  </spine>
+</package>

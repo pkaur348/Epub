@@ -1,0 +1,128 @@
+@namespace epub "http://www.idpf.org/2007/ops";
+
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+}
+p > span {
+    display: block;
+    padding-bottom: 1%;
+}
+/*div[epub|type="chapter"] {
+    background-image: url('childrens-book-swans.jpg'),
+                      url('border1.jpg');
+    background-position: 100% 50%, bottom center;
+    background-size: 50% auto, auto auto;
+    background-repeat: no-repeat, repeat-x;
+    background-color: #fdefc2;
+
+    padding: 2em;
+}
+*/
+div.div1{
+    background-image: url('wisdom.jpg'),
+    url('border3.jpg');
+background-position: 100% 50%, bottom center;
+background-size: 50% auto, auto auto;
+background-repeat: no-repeat, repeat-x;
+background-color: #f6c2fd;
+
+padding: 2em;
+}
+
+div.div2{
+    background-image: url('twinkle.jpg'),
+    url('border2.jpg');
+background-position: 100% 50%, bottom center;
+background-size: 50% auto, auto auto;
+background-repeat: no-repeat, repeat-x;
+background-color: #fdefc2;
+
+padding: 2em;
+}
+
+body.toc
+{
+    background-color: #def7f8;
+}
+div.toc{
+   
+    background: #c7f5f7 none repeat scroll 10 0;
+    background-color: #def7f8;
+    /*filter: blur(8px);*/
+    border: 1px solid #aaa; 
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    margin-top: 5%;
+    padding: 19px;
+    width: 48%;
+    text-align: left;
+    margin-left: 9%;
+}
+    
+
+p {
+    font-size: .75em;
+    text-align: left;
+}
+
+p:last-child {
+    padding-bottom: 2em;
+}
+
+
+h1 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+p > span {
+    display: block;
+}
+
+p > span:nth-child(even) {
+    text-indent: 1em;
+}
+
+@media screen and (max-width:480px) { 
+ 
+    div[epub|type="chapter"] {
+        background-position: top center, bottom center;
+        background-size: 30% auto, 50% auto;
+
+        padding: 1em;
+        margin: auto;
+        text-align: center;
+    }
+    
+    h1 {
+        margin: 50% auto 0 0;
+        font-size: 1em;
+        text-align: center;
+    }
+    p {
+        margin-left: 25%;
+    }
+    
+}
+
+@media screen and (orientation:landscape) { 
+ 
+    div[epub|type="chapter"] {
+        background-position: 97% 40%, bottom center;
+        background-size: 20% auto, 50% auto;
+
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+
+        -webkit-column-gap: 0;
+        -moz-column-count: 0;
+        column-gap: 0;
+
+        padding: 2em 4em 5em 4em;
+    }
+}
